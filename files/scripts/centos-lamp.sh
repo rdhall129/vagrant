@@ -4,7 +4,7 @@
 yum update -y --exclude=kernel
 
 # Tools
-yum install -y nano git unzip screen
+yum install -y nano git unzip screen wget
 
 # Apache
 yum install -y httpd httpd-devel httpd-tools
@@ -21,7 +21,8 @@ yum install -y php php-cli php-common php-devel php-mysql
 
 # MySQL/MariaDB
 yum install -y mariadb mariadb-server mariadb-devel
-systemctl enable mariadbsystemctl start mariadb
+systemctl enable mariadb
+systemctl start mariadb
 
 mysql -u root -e "SHOW DATABASES";
 

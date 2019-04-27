@@ -4,4 +4,4 @@
 yum update -y --exclude=kernel
 
 # Tools
-yum install -y nano git unzip screen wget nc telnet
+yum install -y nano git unzip screen wget nc telnet net-tools
